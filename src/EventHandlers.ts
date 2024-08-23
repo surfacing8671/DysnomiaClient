@@ -10,6 +10,8 @@ Shio.LogEvent.handler(async ({ event, context }) => {
   const entity: Shio_LogEvent = {
     id: `${event.chainId}_${event.block.number}_${event.logIndex}`,  
     data: event.params.LogLine,
+    soul: event.params.soul,
+    aura: event.params.aura,
   };
 
   context.Shio_LogEvent.set(entity);

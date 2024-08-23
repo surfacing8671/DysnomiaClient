@@ -1,5 +1,7 @@
 type Shio_LogEvent {
   id: ID!
+  soul: BigInt!
+  aura: BigInt!
   data: String!
 }
 

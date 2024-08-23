@@ -11,4 +11,4 @@ networks:
     - 0x7ae73c498a308247be73688c09c96b3fd06ddb84
     handler: src/EventHandlers.ts
     events:
-    - event: LogEvent(uint64 Soul, uint64 Aura, string LogLine)
+    - event: LogEvent(uint64 soul, uint64 aura, string LogLine)
