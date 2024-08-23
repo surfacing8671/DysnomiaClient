@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: My Envio Indexer
+networks:
+- id: 369
+  rpc_config:
+    url: https://rpc.pulsechain.com
+  start_block: 21200000
+  contracts:
+  - name: shio
+    address:
+    - 0x7ae73c498a308247be73688c09c96b3fd06ddb84
+    handler: src/EventHandlers.ts
+    events:
+    - event: LogEvent(uint64 Soul, uint64 Aura, string LogLine)

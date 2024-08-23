@@ -1,0 +1,5 @@
+type Shio_LogEvent {
+  id: ID!
+  data: String!
+}
+
