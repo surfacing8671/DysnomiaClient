@@ -8,7 +8,7 @@ networks:
   contracts:
   - name: shio
     address:
-    - 0x7ae73c498a308247be73688c09c96b3fd06ddb84
+    - 0x7aE73C498A308247BE73688c09c96B3fd06dDB84
     handler: src/EventHandlers.ts
     events:
     - event: LogEvent(uint64 soul, uint64 aura, string LogLine)
